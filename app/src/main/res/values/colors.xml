@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--导航栏颜色_APP主题色-->
+    <color name="colorPrimary">#FFFF00</color>
+    <!--沉浸式状态栏颜色-->
+    <color name="colorPrimaryDark">#FFFF00</color>
+    <!--控件选中色-->
+    <color name="colorAccent">#FFFF00</color>
+    <!--window背景颜色-->
+    <color name="windowBackground">#222127</color>
+    <!--主体文字颜色-->
+    <color name="textColorPrimary">#333333</color>
+
+    <!--tab标签栏文字的颜色-->
+    <color name="colorTabText">#585858</color>
+    <!--item选项背景-->
+    <color name="itemBackground">#38373C</color>
+</resources>

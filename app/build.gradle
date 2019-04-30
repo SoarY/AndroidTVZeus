@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion build_android.compileSdkVersion
+    defaultConfig {
+        applicationId build_android.applicationId
+        minSdkVersion build_android.minSdkVersion
+        targetSdkVersion build_android.targetSdkVersion
+        versionCode build_android.versionCode
+        versionName build_android.versionName
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+        javaCompileOptions {//ARouter
+            annotationProcessorOptions {
+                arguments = [AROUTER_MODULE_NAME: project.getName()]
+            }
+        }
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+//configurations.all {
+//    resolutionStrategy.eachDependency { DependencyResolveDetails details ->
+//        def requested = details.requested
+//        if (requested.group == 'com.android.support')
+//            if (!requested.name.startsWith("multidex"))
+//                details.useVersion versions.support
+//    }
+//}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation authority.junit
+    androidTestImplementation authority.test_runner
+    androidTestImplementation authority.test_espresso
+    implementation authority.appcompat_v7
+    implementation authority.arch_extensions
+    implementation authority.design
+
+    //retrofit2
+    implementation thirdLibs.retrofit2
+    implementation thirdLibs.retrofit2_gson
+    implementation thirdLibs.retrofit2_adapter
+    //rxjava2
+    implementation thirdLibs.rxjava2
+    implementation thirdLibs.rxandroid
+    //Rxlifecycle2
+    implementation thirdLibs.Rxlifecycle2
+    //ARouter
+    implementation thirdLibs.arouter_api
+    annotationProcessor thirdLibs.arouter_compiler
+    //Glide
+    implementation thirdLibs.glide
+    //stream
+    implementation thirdLibs.stream
+    //EventBus
+    implementation thirdLibs.EventBus
+}

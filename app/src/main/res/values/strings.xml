@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">VideoSearch</string>
+
+    <string name="tab_me">我的</string>
+    <string name="tab_home">首页</string>
+    <string name="tab_abc">标题</string>
+
+    <string name="app_exit">再按一次退出程序</string>
+    <string name="app_login">登录</string>
+</resources>
