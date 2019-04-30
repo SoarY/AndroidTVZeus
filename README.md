@@ -1,8 +1,8 @@
 # VideoSearch
 
-此应用为Android TV应用 为TV助力。
+为TV助力。
 
-项目以MVVM+DataBinding框架为基础搭建,Retrofit2、RxJava2等开源库。
+项目以MVVM+DataBinding框架为基础搭建,使用Retrofit2、RxJava2等开源库。
 
 ## Demo
 [Download](https://github.com/SoarY/VideoSearch/blob/master/file/VideoSearch.apk?raw=true)
