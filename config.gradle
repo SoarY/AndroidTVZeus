@@ -2,7 +2,7 @@ ext {
     //android开发版本配置
     build_android = [
             compileSdkVersion: 28,
-            applicationId    : "com.soar.videosearch",
+            applicationId    : "com.soar.zeus",
             minSdkVersion    : 14,
             targetSdkVersion : 28,
             versionCode      : 10,

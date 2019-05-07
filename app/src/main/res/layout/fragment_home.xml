@@ -6,7 +6,7 @@
 
         <variable
             name="vm"
-            type="com.meixun.videosearch.vm.HomeViewModel" />
+            type="com.soar.zeus.vm.HomeViewModel" />
     </data>
 
     <!--android:descendantFocusability="afterDescendants"-->
@@ -19,6 +19,6 @@
         android:paddingBottom="@dimen/dp_20"
         android:clipToPadding="false"
         android:scrollbars="none"
-        app:layoutManager="com.meixun.videosearch.view.FocusStableLinearLayoutManager" />
+        app:layoutManager="com.soar.zeus.view.FocusStableLinearLayoutManager" />
 
 </layout>

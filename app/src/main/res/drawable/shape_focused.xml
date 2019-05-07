@@ -7,9 +7,9 @@
         android:color="@color/colorAccent" />
     <solid android:color="@android:color/transparent" />
     <padding
-        android:bottom="@dimen/dp_4"
-        android:left="@dimen/dp_4"
-        android:right="@dimen/dp_4"
-        android:top="@dimen/dp_4" />
+        android:bottom="@dimen/dp_7"
+        android:left="@dimen/dp_7"
+        android:right="@dimen/dp_7"
+        android:top="@dimen/dp_7" />
 
 </shape>

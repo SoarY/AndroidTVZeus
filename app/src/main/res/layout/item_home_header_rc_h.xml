@@ -5,7 +5,7 @@
 
         <variable
             name="vm"
-            type="com.meixun.videosearch.vm.HomeViewModel" />
+            type="com.soar.zeus.vm.HomeViewModel" />
     </data>
 
     <FrameLayout

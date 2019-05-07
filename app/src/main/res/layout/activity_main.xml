@@ -8,31 +8,28 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <FrameLayout
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tab_layout"
             android:layout_width="match_parent"
-            android:layout_height="@dimen/dp_75"
-            android:layout_marginTop="@dimen/dp_75"
-            android:paddingLeft="@dimen/dp_75"
-            android:paddingRight="@dimen/dp_75">
+            android:layout_height="@dimen/dp_90"
+            android:layout_marginLeft="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_50"
+            android:paddingTop="@dimen/dp_10"
+            android:paddingBottom="@dimen/dp_10"
+            app:tabGravity="fill"
+            app:tabIndicatorHeight="0dp"
+            app:tabMaxWidth="@dimen/dp_180"
+            app:tabMinWidth="@dimen/dp_180"
+            app:tabMode="scrollable" />
 
-            <android.support.design.widget.TabLayout
-                android:id="@+id/tab_layout"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                app:tabGravity="fill"
-                app:tabIndicatorHeight="0dp"
-                app:tabMinWidth="@dimen/dp_180"
-                app:tabMode="scrollable" />
-        </FrameLayout>
-
-        <com.meixun.videosearch.view.NoScrollViewPager
+        <com.soar.zeus.view.NoScrollViewPager
             android:id="@+id/view_pager"
             android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:clipChildren="false"
             android:clipToPadding="false"
-            android:paddingTop="@dimen/dp_50"
-            android:paddingLeft="@dimen/dp_70"
-            android:layout_height="match_parent" />
+            android:paddingLeft="@dimen/dp_75"
+            android:paddingTop="@dimen/dp_30" />
 
     </LinearLayout>
 </layout>
