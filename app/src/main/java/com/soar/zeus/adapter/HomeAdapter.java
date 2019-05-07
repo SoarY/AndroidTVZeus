@@ -123,6 +123,7 @@ public class HomeAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
         public AdapterHolder(ItemTypeAdapterBinding binding) {
             super(binding.getRoot());
             this.binding = binding;
+            binding.recyclerView.addItemDecoration(new LinearItemDecoration((int)binding.getRoot().getContext().getResources().getDimension(R.dimen.dp_30)));
         }
     }
 }
