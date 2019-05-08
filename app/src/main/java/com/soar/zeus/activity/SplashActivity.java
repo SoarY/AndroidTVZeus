@@ -13,6 +13,7 @@ import com.soar.zeus.base.BaseViewModel;
 import com.soar.zeus.constant.ConstantsImageUrl;
 import com.soar.zeus.constant.RouteConstants;
 import com.soar.zeus.databinding.ActivitySplashBinding;
+import com.soar.zeus.utils.CommonUtils;
 import com.soar.zeus.view.StatusBarCompat;
 
 import java.io.File;
@@ -43,7 +44,7 @@ public class SplashActivity extends BaseActivity<ActivitySplashBinding, BaseView
 
         FutureTarget<File> future = Glide.with(context)
                 .load(ConstantsImageUrl.SPLASH_1920_1080_1)
-                .downloadOnly(1920, 1080);
+                .downloadOnly(CommonUtils.dip2px(getResources().getDimension(R.dimen.dp_1920)), CommonUtils.dip2px(getResources().getDimension(R.dimen.dp_1080)));
         RequestOptions options = new RequestOptions()
                 .error(R.mipmap.ic_splash);
         Glide.with(context)
